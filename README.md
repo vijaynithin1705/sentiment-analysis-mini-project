@@ -61,7 +61,6 @@ text (string)
 ## Input Validation
 - Non-string input → 422 error
 - Empty string → 400 error
-- Text over 1000 characters → 400 error
 
 ---
 
@@ -95,7 +94,7 @@ The model was tested on 12 sentences:
 ## 📌 Notes
 
 * The Hugging Face model returns only Positive/Negative
-* Neutral sentiment is derived using a confidence score threshold (< 0.6)
+* Neutral sentiment is derived using a confidence score threshold (< 0.7)
 
 ---
 
