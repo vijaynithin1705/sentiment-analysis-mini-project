@@ -61,30 +61,37 @@ text (string)
 ```
 ---
 
+## Input Validation
+- Non-string input → 422 error
+- Empty string → 400 error
+- Text over 1000 characters → 400 error
+
+---
+
 ## 🧪 Test Cases
 
 The model was tested on 12 sentences:
 
 ### Positive
 
-* I love this product
-* This is amazing and works perfectly
-* I am very happy with the results
-* Excellent service and quality
+* I absolutely loved this movie, it was fantastic!
+* The service was excellent and the staff were so kind.
+* What a wonderful day, everything went perfectly!
+* This is the best product I have ever purchased.
 
 ### Negative
 
-* I hate this item
-* This is the worst experience ever
-* Very bad quality and disappointing
-* I am extremely unhappy with this
+* This is absolutely terrible, I hated every second.
+* The food was disgusting and the place was filthy.
+* I'm so disappointed, this was a complete waste of money.
+* Worst experience of my life, would never recommend.
 
 ### Neutral
 
-* The product arrived yesterday
-* It is a phone with a 6-inch display
-* The meeting is scheduled for tomorrow
-* This is a table
+* The meeting is scheduled for 3pm on Tuesday.
+* The report contains twelve pages of data.
+* She walked to the store and bought some groceries.
+* The conference will be held in the main hall.
 
 ---
 
