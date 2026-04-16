@@ -21,6 +21,8 @@ def analyze(input: TextInput):
     try:
         result = get_sentiment(input.text)
         return result
-    except (ValueError, TypeError) as e:
+    except TypeError as e:
+        raise HTTPException(status_code=422, detail=str(e))
+    except ValueError as e:
         raise HTTPException(status_code=400, detail=str(e))
 
